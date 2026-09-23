@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Issues | Urban Green</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .issues-section {
+            padding: 55px 7%;
+        }
+
+        .issues-heading {
+            margin-bottom: 30px;
+        }
+
+        .issues-heading .eyebrow {
+            margin-bottom: 8px;
+        }
+
+        .issues-heading h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .issues-heading p {
+            color: #657269;
+            font-size: 14px;
+        }
+
+        .issues-container {
+            background: white;
+            border: 1px solid #e1e4df;
+            border-radius: 12px;
+            padding: 10px 25px;
+        }
+
+        .issue-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 5px;
+            border-bottom: 1px solid #e7e9e7;
+        }
+
+        .issue-item:last-child {
+            border-bottom: none;
+        }
+
+        .issue-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .issue-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 9px;
+            background: #f1f4f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 21px;
+        }
+
+        .issue-details h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .issue-details p {
+            color: #7a847d;
+            font-size: 12px;
+        }
+
+        .issue-status {
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .status-open {
+            background: #fff2e5;
+            color: #b85b00;
+        }
+
+        .status-progress {
+            background: #e7f0f8;
+            color: #32628a;
+        }
+
+        .status-resolved {
+            background: #e5f1e8;
+            color: #35704b;
+        }
+
+        .report-box {
+            margin-top: 25px;
+            background: #e8f1eb;
+            border-radius: 12px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .report-box h2 {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .report-box p {
+            color: #657269;
+            font-size: 13px;
+        }
+
+        .report-btn {
+            display: inline-block;
+            background: #3f6e55;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .report-btn:hover {
+            background: #2e5942;
+        }
+
+        @media (max-width: 700px) {
+
+            .issues-section {
+                padding: 30px 6%;
+            }
+
+            .issue-item {
+                align-items: flex-start;
+            }
+
+            .report-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            .issue-item {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                UG
+            </div>
+
+            <div>
+                <h2>Urban Green</h2>
+                <span>Infrastructure Management</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MENU</p>
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html" class="nav-item">
+                <span>ⓘ</span>
+                About
+            </a>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="projects.html" class="nav-item">
+                <span>▤</span>
+                Projects
+            </a>
+
+            <a href="issues.html" class="nav-item active">
+                <span>⚠</span>
+                Issues
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html" class="nav-item">
+                <span>→</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+
+                <div class="brand-icon">
+                    UG
+                </div>
+
+                <span>Urban Green</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <span class="dashboard-user">
+                    Welcome
+                </span>
+
+                <a href="login.html" class="primary-btn">
+                    Logout
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <section class="issues-section">
+
+
+            <div class="issues-heading">
+
+                <span class="eyebrow">
+                    ISSUE MANAGEMENT
+                </span>
+
+                <h1>
+                    Reported Infrastructure Issues
+                </h1>
+
+                <p>
+                    Monitor infrastructure problems and track their
+                    current resolution status.
+                </p>
+
+            </div>
+
+
+
+            <div class="issues-container">
+
+
+                <div class="issue-item">
+
+                    <div class="issue-left">
+
+                        <div class="issue-icon">
+                            🛣
+                        </div>
+
+                        <div class="issue-details">
+
+                            <h3>
+                                Road Damage
+                            </h3>
+
+                            <p>
+                                Pothole reported on Main Street
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="issue-status status-open">
+                        Open
+                    </span>
+
+                </div>
+
+
+
+                <div class="issue-item">
+
+                    <div class="issue-left">
+
+                        <div class="issue-icon">
+                            💧
+                        </div>
+
+                        <div class="issue-details">
+
+                            <h3>
+                                Water Leakage
+                            </h3>
+
+                            <p>
+                                Pipeline leakage reported in Sector 4
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="issue-status status-progress">
+                        In Progress
+                    </span>
+
+                </div>
+
+
+
+                <div class="issue-item">
+
+                    <div class="issue-left">
+
+                        <div class="issue-icon">
+                            💡
+                        </div>
+
+                        <div class="issue-details">
+
+                            <h3>
+                                Street Light Issue
+                            </h3>
+
+                            <p>
+                                Non-functional street light near Park Road
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="issue-status status-resolved">
+                        Resolved
+                    </span>
+
+                </div>
+
+
+
+                <div class="issue-item">
+
+                    <div class="issue-left">
+
+                        <div class="issue-icon">
+                            🗑
+                        </div>
+
+                        <div class="issue-details">
+
+                            <h3>
+                                Waste Management
+                            </h3>
+
+                            <p>
+                                Overflowing waste collection point
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="issue-status status-open">
+                        Open
+                    </span>
+
+                </div>
+
+
+
+                <div class="issue-item">
+
+                    <div class="issue-left">
+
+                        <div class="issue-icon">
+                            🚦
+                        </div>
+
+                        <div class="issue-details">
+
+                            <h3>
+                                Traffic Signal
+                            </h3>
+
+                            <p>
+                                Traffic signal malfunction reported
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="issue-status status-progress">
+                        In Progress
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="report-box">
+
+                <div>
+
+                    <h2>
+                        Found an Infrastructure Problem?
+                    </h2>
+
+                    <p>
+                        Help improve the city by reporting an
+                        infrastructure issue in your area.
+                    </p>
+
+                </div>
+
+                <a href="#" class="report-btn">
+                    Report an Issue
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <footer>
+
+            <div class="footer-brand">
+
+                <div class="brand-icon">
+                    UG
+                </div>
+
+                <span>Urban Green</span>
+
+            </div>
+
+            <p>
+                Smart Urban Infrastructure Management
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>

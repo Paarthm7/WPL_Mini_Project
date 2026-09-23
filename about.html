@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Urban Green</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .about-section {
+            padding: 55px 7%;
+        }
+
+        .about-hero {
+            background: #e8f1eb;
+            border-radius: 14px;
+            padding: 45px;
+            margin-bottom: 35px;
+        }
+
+        .about-hero .eyebrow {
+            margin-bottom: 10px;
+        }
+
+        .about-hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .about-hero p {
+            max-width: 750px;
+            color: #657269;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .about-card {
+            background: white;
+            border: 1px solid #e1e4df;
+            border-radius: 12px;
+            padding: 28px;
+        }
+
+        .about-card h2 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .about-card p {
+            color: #657269;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid #e1e4df;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .feature-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 9px;
+            background: #e8f1eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: #657269;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        
+
+        @media (max-width: 900px) {
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .about-section {
+                padding: 30px 6%;
+            }
+
+            .about-hero {
+                padding: 30px;
+            }
+
+            .about-hero h1 {
+                font-size: 30px;
+            }
+
+            .about-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                UG
+            </div>
+
+            <div>
+                <h2>Urban Green</h2>
+                <span>Infrastructure Management</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MENU</p>
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html" class="nav-item active">
+                <span>ⓘ</span>
+                About
+            </a>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="projects.html" class="nav-item">
+                <span>▤</span>
+                Projects
+            </a>
+
+            <a href="issues.html" class="nav-item">
+                <span>⚠</span>
+                Issues
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html" class="nav-item">
+                <span>→</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+
+                <div class="brand-icon">
+                    UG
+                </div>
+
+                <span>Urban Green</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <span class="dashboard-user">
+                    Welcome
+                </span>
+
+                <a href="login.html" class="primary-btn">
+                    Logout
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section">
+
+
+            <div class="about-hero">
+
+                <span class="eyebrow">
+                    ABOUT URBAN GREEN
+                </span>
+
+                <h1>
+                    Building Smarter, Greener Cities
+                </h1>
+
+                <p>
+                    Urban Green is a smart urban infrastructure management
+                    platform designed to provide a centralized view of
+                    infrastructure projects and reported civic issues.
+                    The platform helps monitor development, track progress
+                    and identify infrastructure problems in urban areas.
+                </p>
+
+            </div>
+
+
+
+            <div class="about-grid">
+
+
+                <div class="about-card">
+
+                    <h2>Our Objective</h2>
+
+                    <p>
+                        The objective of Urban Green is to create a digital
+                        platform that makes urban infrastructure information
+                        easier to monitor and manage. It brings projects,
+                        infrastructure issues and progress information
+                        together in one place.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h2>Why Urban Green?</h2>
+
+                    <p>
+                        Rapid urban development creates the need for better
+                        infrastructure monitoring. Urban Green provides a
+                        structured interface where infrastructure projects
+                        can be tracked while reported issues can be monitored
+                        based on their current status.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <h2 class="section-title">
+                Platform Features
+            </h2>
+
+
+            <div class="features-grid">
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📊
+                    </div>
+
+                    <h3>Smart Dashboard</h3>
+
+                    <p>
+                        View important infrastructure statistics,
+                        project progress and issue information through
+                        a centralized dashboard.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🏗
+                    </div>
+
+                    <h3>Project Monitoring</h3>
+
+                    <p>
+                        Track ongoing infrastructure projects and
+                        monitor their development progress.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ⚠
+                    </div>
+
+                    <h3>Issue Reporting</h3>
+
+                    <p>
+                        Identify and monitor civic infrastructure
+                        issues such as road damage, water leakage
+                        and street light problems.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🌱
+                    </div>
+
+                    <h3>Sustainable Development</h3>
+
+                    <p>
+                        Promote infrastructure development that
+                        considers sustainability and efficient use
+                        of urban resources.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💡
+                    </div>
+
+                    <h3>Smart Infrastructure</h3>
+
+                    <p>
+                        Support technology-driven infrastructure
+                        solutions for modern cities.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🌆
+                    </div>
+
+                    <h3>Better Urban Management</h3>
+
+                    <p>
+                        Provide a structured digital interface for
+                        monitoring infrastructure development and
+                        civic issues.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="footer-brand">
+
+                <div class="brand-icon">
+                    UG
+                </div>
+
+                <span>Urban Green</span>
+
+            </div>
+
+            <p>
+                Smart Urban Infrastructure Management
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>
