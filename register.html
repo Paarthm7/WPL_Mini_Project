@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Urban Green</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* ================= AUTH PAGE ================= */
+
+        .auth-section {
+            min-height: calc(100vh - 72px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 6%;
+        }
+
+        .auth-card {
+            width: 100%;
+            max-width: 480px;
+            background: white;
+            border: 1px solid #e1e4df;
+            border-radius: 14px;
+            padding: 38px;
+            box-shadow: 0 10px 30px rgba(24, 56, 42, 0.07);
+        }
+
+        .auth-header {
+            margin-bottom: 28px;
+        }
+
+        .auth-header .eyebrow {
+            display: inline-block;
+            margin-bottom: 9px;
+        }
+
+        .auth-header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #202923;
+        }
+
+        .auth-header p {
+            color: #657269;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .form-group label {
+            color: #202923;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 13px;
+            border: 1px solid #d6dcd7;
+            border-radius: 7px;
+            background: #fafbfa;
+            color: #202923;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            outline: none;
+            transition: 0.2s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #3f6e55;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(63, 110, 85, 0.08);
+        }
+
+        .form-group input::placeholder {
+            color: #9aa39d;
+        }
+
+        .auth-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            margin-top: 4px;
+            text-align: center;
+        }
+
+        .auth-footer {
+            text-align: center;
+            color: #7a847d;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .auth-footer a {
+            color: #315c46;
+            font-weight: 600;
+        }
+
+        .auth-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+
+            .auth-section {
+                padding: 30px 6%;
+            }
+
+            .auth-card {
+                padding: 28px 22px;
+            }
+
+            .auth-header h1 {
+                font-size: 26px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="brand-icon">
+                UG
+            </div>
+
+            <div>
+                <h2>Urban Green</h2>
+                <span>Infrastructure Management</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MENU</p>
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="about.html" class="nav-item">
+                <span>ⓘ</span>
+                About
+            </a>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="projects.html" class="nav-item">
+                <span>▤</span>
+                Projects
+            </a>
+
+            <a href="issues.html" class="nav-item">
+                <span>⚠</span>
+                Issues
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="login.html" class="nav-item">
+                <span>→</span>
+                Login
+            </a>
+
+            <a href="register.html" class="sidebar-register">
+                Get Started
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+
+                <div class="brand-icon">
+                    UG
+                </div>
+
+                <span>Urban Green</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <a href="index.html" class="top-login">
+                    Home
+                </a>
+
+                <a href="login.html" class="primary-btn">
+                    Login
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= REGISTER ================= -->
+
+        <section class="auth-section">
+
+            <div class="auth-card">
+
+
+                <div class="auth-header">
+
+                    <span class="eyebrow">
+                        GET STARTED
+                    </span>
+
+                    <h1>
+                        Create your account
+                    </h1>
+
+                    <p>
+                        Start monitoring projects and infrastructure
+                        information in one place.
+                    </p>
+
+                </div>
+
+
+
+                <form class="auth-form">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        class="primary-btn auth-btn"
+                        onclick="window.location.href='dashboard.html'">
+
+                        Create Account
+
+                    </button>
+
+
+
+                    <p class="auth-footer">
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login
+                        </a>
+
+                    </p>
+
+
+                </form>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div class="footer-brand">
+
+                <div class="brand-icon">
+                    UG
+                </div>
+
+                <span>Urban Green</span>
+
+            </div>
+
+            <p>
+                Smart Urban Infrastructure Management
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
